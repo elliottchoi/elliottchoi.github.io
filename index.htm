@@ -1,30 +1,167 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>Elliott Choi, Software Engineering and Commerce Student</title>
-		<!-- link to main stylesheet -->
-		<link rel="stylesheet" type="text/css" href="/css/main.css">
-	</head>
-	<body>
-		<nav>
-    		<ul>
-        		<li><a href="/">Home</a></li>
-	        	<li><a href="/about">About</a></li>
-        		<li><a href="/resume">Resume</a></li>
-        		<li><a href="/projects">Projects</a></li>
-    		</ul>
-		</nav>
-		<div class="container">
-    		<div class="blurb">
-        		<h1>Hi I'm Elliott Choi!</h1>
-				<p>I'm best known as the horrible cop from <em>A Touch of Evil</em> Don't trust me. <a href="/about">Read more about my life...</a></p>
-    		</div><!-- /.blurb -->
-		</div><!-- /.container -->
-		<footer>
-    		<ul>
-        		<li><a href="echoi88@uwo.ca">email</a></li>
-        		<li><a href="https://github.com/elliottchoi">github.com/elliottchoi</a></li>
-			</ul>
-		</footer>
-	</body>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+<div class="container-fluid">
+  <h2>Hi Elliott!<small>I am constructing things in bootstrap!</h2>
+  <p>Resize the browser window to see the effect.</p>
+  <div class="row">
+    <div class="col-sm-3" style="background-color:grey;"><mark>column 1</mark></div>
+    <div class="col-sm-3" style="background-color:lavenderblush;">.col-sm-3</div>
+    <div class="col-sm-3" style="background-color:lavender;">.col-sm-3</div>
+ <div class="col-sm-3" style="background-color:pink;">.col-sm-3</div>
+  </div>
+<h1>The following makes use of the abbr function to abbreviate</h1>
+<p>I used to compete in <abbr title="World Taekwondo Federation">WTF</abbr> </p>
+
+
+<h1>The following is an example of block quotes</h1>
+<blockquote>
+    <p>A line will be placed to the left of this text.</p>
+    <footer>This is the place for references</footer>
+  </blockquote>
+
+<h1>The following is an example of a right block quote</h1>
+<blockquote class="blockquote-reverse">
+<p>For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.</p>
+    <footer>This reference appears on the right side</footer>
+  </blockquote>
+
+<h1>I have created my first grocery list!</h1>
+<dl>
+<dt>Coffee (bold)</dt>
+<dd>Tim Hortons variety of course </dl>
+<dt>Pasta (bold becase of dt command)</dt>
+<dd>No name brand cause im poor af</dl>
+
+<h1>Keyboard Inputs</h1>
+ <p>To indicate input that is typically entered via the keyboard, use the kbd element:</p>
+ <p>Use <kbd>ctrl + c</kbd> how to copy text.</p>
+
+<h1>There is a variety of colours and backgrounds to enhance the website</h1>
+<p class="text-muted">This text is muted.</p>
+  <p class="text-primary">This text is important.</p>
+  <p class="text-success">This text indicates success.</p>
+  <p class="text-info">This text represents some information.</p>
+  <p class="text-warning">This text represents a warning.</p>
+  <p class="text-danger">This text represents danger.</p>
+
+<h2>The following shows how tables are created, if I do table class= "table table-striped", table-bordered, table-hover, table-condensed. </h2>
+<h6>Using the call div class="table-responsive" before the table class call, allows responsive tables for mobile devices</h6>
+<div class="table-responsive">
+<table class="table table-hover">
+    <thead>
+      <tr>
+        <th>First name</th>
+        <th>Last name</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr>
+        <td>Mary</td>
+        <td>Moe</td>
+        <td>mary@example.com</td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>july@example.com</td>
+      </tr>
+<tr>
+<td>Elliott</td>
+<td>Choi</td>
+<td>elliottchoi98@gmail.com</td>
+    </tbody>
+  </table>
+</div>
+
+<h1>I have constructed a image gallery via the 12 columns<h1>
+<div class="row">
+  <div class="col-md-4">
+    <a href="pulpitrock.jpg" class="img-responsive">
+      <h6>Pulpit Rock: A famous tourist attraction in Forsand, Ryfylke, Norway.</h6> 
+      <img src="pulpitrock.jpg" alt="Pulpit Rock" style="width:250px;height:250px">
+    </a>
+  </div>
+  <div class="col-md-4">
+    <a href="moustiers-sainte-marie.jpg" class="img-responsive">
+      <h6>Moustiers-Sainte-Marie: Considered as one of the "most beautiful villages of France".</h6>
+      <img src="moustiers-sainte-marie.jpg" alt="Moustiers Sainte Marie" style="width:250px;height:250px">
+    </a>
+  </div>
+  <div class="col-md-4">
+    <a href="cinqueterre.jpg" class="img-responsive">
+      <h6>The Cinque Terre: A rugged portion of coast in the Liguria region of Italy.</h6> 
+      <img src="cinqueterre.jpg" alt="Cinque Terre" style="width:250px;height:250px">
+    </a>
+  </div>
+</div>
+
+<h1>In the following, I will be creating a jumbotron, which is a greyed box to call attention</h1>
+<h4><small> if called outside container then extends whole page, if called inside container doesnt extend inside the page </h4>
+<div class="jumbotron">
+<p> words are on this attention</p>
+</div>
+
+<h1>Headers are useful to draw attention as well</h1>
+<div class="page-header">
+<h1>This is a header!</h1>
+</div>
+
+<div class = "well">Wells are medium by default, for other sizes the syntax well well-sm or well-lg
+</div>
+
+<h2>Alert Methods using the script function in html</h2>
+  <p>The <strong>close</strong> method closes the alert message.</p>
+  <div class="alert alert-danger" id="myAlert">
+    <a href="#" class="close">&times;</a>
+    <strong>The call strong makes things bold!</strong> Try to close this alert message.
+  </div>
+</div>
+
+<h1>Inserting a button</h1>
+  <button type="button" class="btn btn-primary">Default</button>
+
+<h1>The following button will be defined as a hyper link. For now, using the # variable in place of a link prevents the 404 error </h1>
+<a href="https://facebook.com" class="btn btn-danger btn-block" role="button">facebook</a>
+
+<div class="button btn-group">
+ <a href="https://facebook.com" class="btn btn-primary">Facebook</a>
+<a href="https://linkedin.com" class="btn btn-success">LinkedIn</a>
+
+<h1>The following will be useful at the bottom of the webpage for contact etc</h1>
+<p>I am creating sample buttons for contact etc</p>
+<a href="elliottchoi98@gmail.com"><span class="glyphicon glyphicon-envelope"></span></a>
+<a href="https://linkedin.com/elliottchoi98"><span class="glyphicon glyphicon-"></span></a>
+
+  <p>Print icon on a styled link button:
+    <a href="#" class="btn btn-success btn-lg">
+      <span class="glyphicon glyphicon-print"></span> Print
+    </a>
+
+<script>
+$(document).ready(function(){
+    $(".close").click(function(){
+        $("#myAlert").alert("close");
+    });
+});
+</script>
+
+</body>
 </html>
+
