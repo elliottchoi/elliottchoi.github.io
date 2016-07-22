@@ -1,4 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>My Website</title>
+  <link href="style.css" rel="stylesheet" type="text/css"/>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
 <style>
+@font-face {font-family:GeosansLight; src:url('GeosansLight.TTF');}
+
 #coverphoto{
 	position:relative;
 	left:0px;
@@ -15,12 +28,20 @@
 	z-index:0
 }
 
+#linkedin:hover{
+opacity: 0.5;
+}
+
 #stackOverFlow{
 	height:auto;
 	width:200px;
 	position:absolute;
 	left:295px;
 	top:96px;
+}
+
+#stackOverFlow:hover{
+opacity: 0.5;
 }
 
 #resume{
@@ -32,13 +53,32 @@
 	top:120px;
 }
 
+#Resume:hover{
+opacity: 0.5;
+}
+
 #github{
 	color:#000000;
 	height:auto;
-	width:150px;
+	width:145px;
 	position:absolute;
-	left:650px;
-	top:120px;
+	left:665px;
+	top:114px;
+}
+h3{
+font-family:GeosansLight;
+}
+
+.center{ 
+	position: absolute;
+	left:0;
+	width100%
+	text-align: center;
+	font-size 40px;
+}
+
+#github:hover{
+opacity: 0.5;
 }
 </style>
 </head>
@@ -57,7 +97,9 @@
 
   
 <div class="container">
-  <h3><center>about Me</center></h3>
+<div class="navBar>
+  <h3><center><strong>about Me<strong></center></h3>
+</div>
 </div>
 
 
