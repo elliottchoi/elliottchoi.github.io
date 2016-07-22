@@ -1,0 +1,65 @@
+<style>
+#coverphoto{
+	position:relative;
+	left:0px;
+	top:0px;
+	z-index:-1;
+
+}
+#linkedin{
+	height:auto;
+	width:200px; 
+	position:absolute;
+	left:120px;
+	top:100px;
+	z-index:0
+}
+
+#stackOverFlow{
+	height:auto;
+	width:200px;
+	position:absolute;
+	left:295px;
+	top:96px;
+}
+
+#resume{
+	color:#000000;
+	height:auto;
+	width:150px;
+	position:absolute;
+	left:490px;
+	top:120px;
+}
+
+#github{
+	color:#000000;
+	height:auto;
+	width:150px;
+	position:absolute;
+	left:650px;
+	top:120px;
+}
+</style>
+</head>
+
+
+<body>
+
+<img id="coverphoto" class="img-responsive" src="http://i.imgur.com/jRYjz0o.jpg" alt="cover photo" style=max-width:100%;height:auto">
+
+
+
+<a href="https://ca.linkedin.com/in/elliottchoi"><img id="linkedin" class="img-responsive" src="http://i.imgur.com/EMRthws.png" alt="linkedIn logo"></a>
+<a href="ElliottChoiResume.pdf"><img id="stackOverFlow" class="img-responsive" src="http://i.imgur.com/xbDyyg8.png" alt="stackoverflow logo"></a>
+<a href="http://stackoverflow.com/"><img id="resume" class="img-responsive" src="http://i.imgur.com/PtZdyHK.png" alt="resume png"></a>
+<a href="https://github.com/elliottchoi"><img id="github" class="img-responsive" src="http://i.imgur.com/hLiZMEs.png"></a>
+
+  
+<div class="container">
+  <h3><center>about Me</center></h3>
+</div>
+
+
+
+</body>
