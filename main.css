@@ -1,6 +1,4 @@
-<style>
-
-         @font-face {font-family:'GeosansLight'; src:url('GeosansLight.ttf');}
+ @font-face {font-family:'GeosansLight'; src:url('GeosansLight.ttf');}
          h3{
          font-family:'GeosansLight';
          }
@@ -209,4 +207,4 @@
          -moz-box-sizing: border-box;
          box-sizing: border-box;
          }
-      </style>
+
