@@ -199,14 +199,14 @@
          box-shadow: 0px 3px 18px -3px #111;
          display: none;
          }
-         .about-Me h3{
+         .skills h3{
          color: #555;
          font-size: 48px;
          text-align: center;
          font-weight: bold;
          margin-bottom: 24px;
          }
-         .about-Me h3 strong{
+         .skills h3 strong{
          color: #333;
          text-shadow: 0 0 1px #D1FFF4;
          }
@@ -227,6 +227,11 @@
          -moz-box-sizing: border-box;
          box-sizing: border-box;
          }
+	 .col-sm-1 {
+ 	 margin:10px!important;
+	 }
+
+
       </style>
    </head>
 
@@ -263,12 +268,42 @@
          </a>
       </div>
       <div class="container">
-         <div class="about-Me">
+         <div class="skills">
             <h3>what<span="color:black"><strong> I </strong>know</span></h3>
             <hr />
-            <div class="row">
+            <div class="row centered">
                <div class="col-md-4 bio-container">
-		<a href="#" class="
+		<div>
+           	<a href="#" class="skill-image">
+		<div class="col-sm-1">
+		<span class="helper"></span>
+		<img id="java" class="img-responsive" src="http://i.imgur.com/TSK4rRU.png" alt="java">
+		</div>
+		<div class="col-sm-1">
+	        <span class="helper"></span>
+		<img id="c++" class="img-responsive" src="http://i.imgur.com/GhjX8UU.png" alt="c++">
+		</div>
+		<div class="col-sm-1">
+            	<span class="helper"></span>
+		<img id="meteor" class="img-responsive" src="http://i.imgur.com/emrllp5.png" alt="meteor">
+		</div>
+		<div class="col-sm-1">
+            	<span class="helper"></span>
+		<img id="javascript" class="img-responsive" src="http://i.imgur.com/RfntewH.png" alt="javascript">
+		</div>
+		<div class="col-sm-1">
+		<img id="html5" class="img-responsive" src="http://i.imgur.com/7psitRa.png" alt="html5">
+		</div>
+		<div class="col-sm-1">
+            	<span class="helper"></span>
+		<img id="css" class="img-responsive" src="http://i.imgur.com/oHRLv8G.png" alt="css">
+		</div>
+		<div class="col-sm-1">
+            	<span class="helper"></span>
+		<img id="bootstrap" class="img-responsive" src="http://i.imgur.com/SWF0VUa.png" alt="bootstrap">
+		</div>
+		</a>
+		</div>
                </div>
             </div>
          </div>
