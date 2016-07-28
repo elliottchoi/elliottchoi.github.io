@@ -277,36 +277,34 @@
             <h3>what<span="color:black"><strong> I </strong>know</span></h3>
             <hr/>
             <div class="skillsImages isCentered ">
-                  <div>
-                     <a href="#">
+                     <a href=#">
                      <span class="helper"></span>
                      <img id="java" class="img-responsive" src="http://i.imgur.com/TSK4rRU.png" alt="java">
                      </a>
-                      <a href="#">
+                      <a href=#">
                      <span class="helper"></span>
                      <img id="c++" class="img-responsive" src="http://i.imgur.com/GhjX8UU.png" alt="c++">
                      </a>
-                      <a href="#">
+                      <a href=#">
                       <span class="helper"></span>
                      <img id="meteor" class="img-responsive" src="http://i.imgur.com/emrllp5.png" alt="meteor">
                      </a>
-                      <a href="#">
+                      <a href=#">
                      <span class="helper"></span>
                      <img id="javascript" class="img-responsive" src="http://i.imgur.com/RfntewH.png" alt="javascript">
                      </a>
-                      <a href="#">
+                      <a href=#">
                       <span class="helper"></span>
                      <img id="html5" class="img-responsive" src="http://i.imgur.com/7psitRa.png" alt="html5">
                      </a>
-                      <a href="#">
+                      <a href=#">
                      <span class="helper"></span>
                      <img id="css" class="img-responsive" src="http://i.imgur.com/oHRLv8G.png" alt="css">
                      </a>
-                      <a href="#">
+                      <a href=#">
                      <span class="helper"></span>
                      <img id="bootstrap" class="img-responsive" src="http://i.imgur.com/SWF0VUa.png" alt="bootstrap">
                      </a>
-               </div>
             </div>
          </div>
       </div>
