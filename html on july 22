@@ -9,6 +9,7 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
       <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
       <style>
+
          @font-face {font-family:'GeosansLight'; src:url('GeosansLight.ttf');}
          h3{
          font-family:'GeosansLight';
@@ -19,6 +20,7 @@
          a:hover{
          text-decoration: none;
          }
+
          /* For mobile phones: */
          [class*="col-"] {
          width: 100%;
@@ -53,17 +55,18 @@
          .col-11 {width: 91.66%;}
          .col-12 {width: 100%;}
          }
-         .background{
+         .header{
          background-image: url('http://i.imgur.com/jRYjz0o.jpg');
          background-size: cover;
          background-repeat: no-repeat;
          background-position: center;
-         position: fixed;
-         top: 0; left: 0;
-         height: 100%; width: 100%;
-         z-index: -1;
+         top:0; left:0;
+	 position:fixed;
+         min-height:800px;
+	 width:100%;
          opacity: 0.9;
          }
+
          .menu{
          width: 100%;
          position: relative;
@@ -162,21 +165,25 @@
          height: 90px;
          box-shadow: 9px 0px 9px -9px #222;
          cursor: default;
+
          }
          .menu div a>img{
          max-height: 90%;
          max-width: 90%;
-         filter: grayscale(100%);
-         -webkit-filter: grayscale(1); /* Old WebKit */	
-         transition: all 0.48s ease-in
+  	 filter: grayscale(100%);
+    	 -webkit-filter: grayscale(1); /* Old WebKit */	
+	 transition: all 0.48s ease-in
          vertical-align: middle;
          display: inline-block;
          }
+
          .menu div a>img:hover{
-         filter: grayscale(0%);
-         -webkit-filter: grayscale(0); /* Old WebKit */	
-         transition: all 0.48s ease-in
+ 	 filter: grayscale(0%);
+    	 -webkit-filter: grayscale(0); /* Old WebKit */	
+	 transition: all 0.48s ease-in
          }
+
+
          .helper {
          display: inline-block;
          height: 100%;
@@ -212,11 +219,20 @@
          margin-bottom: 36px;
          }
 
-         .skillsImages div a{
+
+
+	.skillsImages div a>img{
          display: block;
          width: 14%;
          float: left;
-         height: 100px;
+         height: 110px;
+         max-height: 90%;
+         max-width: 90%;
+  	 filter: grayscale(100%);
+    	 -webkit-filter: grayscale(1); /* Old WebKit */	
+	 transition: all 0.48s ease-in
+         vertical-align: middle;
+         display: inline-block;
          text-align: center;
          white-space: nowrap;
          -webkit-transition: all .24s;
@@ -225,24 +241,22 @@
          -o-transition: all .24s;
          transition: all .24s;
          }
-         .skillsImages div a>img{
-         max-height: 90%;
-         max-width: 90%;
-         filter: grayscale(100%);
-         -webkit-filter: grayscale(1); /* Old WebKit */	
-         transition: all 0.48s ease-in
-         vertical-align: middle;
-         display: inline-block;
-         }
+
          .skillsImages div a>img:hover{
-         filter: grayscale(0%);
-         -webkit-filter: grayscale(0); /* Old WebKit */	
-         transition: all 0.48s ease-in
+ 	 filter: grayscale(0%);
+    	 -webkit-filter: grayscale(0); /* Old WebKit */	
+	 transition: all 0.48s ease-in
          }
+
+	 .content{
+	}
       </style>
    </head>
+
+
    <body>
-      <div class="background"></div>
+      <header>
+      <div class="header"></div>
       <div class="menu isCentered">
          <div>
             <h3>Hey, I'm Elliott. Welcome to my website.</h3>
@@ -251,10 +265,10 @@
             <img id="aboutMePhoto" class="img-responsive img-circle" src="http://i.imgur.com/4fGpDAK.jpg" alt="about Me Photo"> 
             </a>
             <a href="https://github.com/elliottchoi">
-            <span class="helper"></span>
+	    <span class="helper"></span>
             <img id="github" class="img-responsive" src="http://i.imgur.com/XzmYtQN.png">
             </a>
-            <a href="https://ca.linkedin.com/in/elliottchoi">
+	    <a href="https://ca.linkedin.com/in/elliottchoi">
             <span class="helper"></span>
             <img id="linkedin" class="img-responsive" src="http://i.imgur.com/oE8kmJk.png" alt="linkedIn logo">
             </a>
@@ -272,43 +286,54 @@
          <img src="http://i.imgur.com/Vq308PV.png" />
          </a>
       </div>
+
       <div class="container">
          <div class="skills">
             <h3>what<span="color:black"><strong> I </strong>know</span></h3>
             <hr/>
             <div class="skillsImages isCentered ">
-                     <a href=#">
-                     <span class="helper"></span>
-                     <img id="java" class="img-responsive" src="http://i.imgur.com/TSK4rRU.png" alt="java">
-                     </a>
-                      <a href=#">
-                     <span class="helper"></span>
-                     <img id="c++" class="img-responsive" src="http://i.imgur.com/GhjX8UU.png" alt="c++">
-                     </a>
-                      <a href=#">
-                      <span class="helper"></span>
-                     <img id="meteor" class="img-responsive" src="http://i.imgur.com/emrllp5.png" alt="meteor">
-                     </a>
-                      <a href=#">
-                     <span class="helper"></span>
-                     <img id="javascript" class="img-responsive" src="http://i.imgur.com/RfntewH.png" alt="javascript">
-                     </a>
-                      <a href=#">
-                      <span class="helper"></span>
-                     <img id="html5" class="img-responsive" src="http://i.imgur.com/7psitRa.png" alt="html5">
-                     </a>
-                      <a href=#">
-                     <span class="helper"></span>
-                     <img id="css" class="img-responsive" src="http://i.imgur.com/oHRLv8G.png" alt="css">
-                     </a>
-                      <a href=#">
-                     <span class="helper"></span>
-                     <img id="bootstrap" class="img-responsive" src="http://i.imgur.com/SWF0VUa.png" alt="bootstrap">
-                     </a>
+		<div>
+           	<a href="#">
+		<span class="helper"></span>
+		<img id="java" class="img-responsive" src="http://i.imgur.com/TSK4rRU.png" alt="java">
+		</a>
+		<a href="#">
+	        <span class="helper"></span>
+		<img id="c++" class="img-responsive" src="http://i.imgur.com/GhjX8UU.png" alt="c++">
+		</a>
+		<a href="#">
+            	<span class="helper"></span>
+		<img id="meteor" class="img-responsive" src="http://i.imgur.com/emrllp5.png" alt="meteor">
+		</a>
+		<a href="#">
+            	<span class="helper"></span>
+		<img id="javascript" class="img-responsive" src="http://i.imgur.com/RfntewH.png" alt="javascript">
+		</a>
+		<a href="#">
+		<img id="html5" class="img-responsive" src="http://i.imgur.com/7psitRa.png" alt="html5">
+		</a>
+		<a href="#">
+            	<span class="helper"></span>
+		<img id="css" class="img-responsive" src="http://i.imgur.com/oHRLv8G.png" alt="css">
+		</a>
+		<a href="#">
+            	<span class="helper"></span>
+		<img id="bootstrap" class="img-responsive" src="http://i.imgur.com/SWF0VUa.png" alt="bootstrap">
+		</a>
+		</div>
             </div>
          </div>
       </div>
       </div>
+      </header>
+	
+	<div class="content-page">
+	<div class="container-home">
+	<h3>hi<h3>
+	</div>
+	</div>
+
+
       <script type="text/javascript">
          $('document').ready(function() {
            $('.to-about-me').click(function() {
@@ -318,4 +343,5 @@
            });
          });
       </script>
+
    </body>
