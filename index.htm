@@ -9,7 +9,6 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
       <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
       <style>
-
          @font-face {font-family:'GeosansLight'; src:url('GeosansLight.ttf');}
          h3{
          font-family:'GeosansLight';
@@ -20,7 +19,6 @@
          a:hover{
          text-decoration: none;
          }
-
          /* For mobile phones: */
          [class*="col-"] {
          width: 100%;
@@ -55,7 +53,6 @@
          .col-11 {width: 91.66%;}
          .col-12 {width: 100%;}
          }
-
          .background{
          background-image: url('http://i.imgur.com/jRYjz0o.jpg');
          background-size: cover;
@@ -169,11 +166,16 @@
          .menu div a>img{
          max-height: 90%;
          max-width: 90%;
+         filter: grayscale(100%);
+         -webkit-filter: grayscale(1); /* Old WebKit */	
+         transition: all 0.48s ease-in
          vertical-align: middle;
          display: inline-block;
          }
-         .menu div a:not(.prof-image):hover{
-         opacity: 0.3;
+         .menu div a>img:hover{
+         filter: grayscale(0%);
+         -webkit-filter: grayscale(0); /* Old WebKit */	
+         transition: all 0.48s ease-in
          }
          .helper {
          display: inline-block;
@@ -191,14 +193,14 @@
          box-shadow: 0px 3px 18px -3px #111;
          display: none;
          }
-         .about-Me h3{
+         .skills h3{
          color: #555;
          font-size: 48px;
          text-align: center;
          font-weight: bold;
          margin-bottom: 24px;
          }
-         .about-Me h3 strong{
+         .skills h3 strong{
          color: #333;
          text-shadow: 0 0 1px #D1FFF4;
          }
@@ -209,21 +211,36 @@
          height: 1px;
          margin-bottom: 36px;
          }
-         .bio-container p{
-         font-size: 14px;
-         padding: 0 54px;
-         line-height: 21px;
-         color: #444;
-         font-family: Candara,Calibri,Segoe,"Segoe UI",Optima,Arial,sans-serif;
-         -webkit-box-sizing: border-box;
-         -moz-box-sizing: border-box;
-         box-sizing: border-box;
+
+         .skillsImages div a{
+         display: block;
+         width: 14%;
+         float: left;
+         height: 100px;
+         text-align: center;
+         white-space: nowrap;
+         -webkit-transition: all .24s;
+         -moz-transition: all .24s;
+         -ms-transition: all .24s;
+         -o-transition: all .24s;
+         transition: all .24s;
+         }
+         .skillsImages div a>img{
+         max-height: 90%;
+         max-width: 90%;
+         filter: grayscale(100%);
+         -webkit-filter: grayscale(1); /* Old WebKit */	
+         transition: all 0.48s ease-in
+         vertical-align: middle;
+         display: inline-block;
+         }
+         .skillsImages div a>img:hover{
+         filter: grayscale(0%);
+         -webkit-filter: grayscale(0); /* Old WebKit */	
+         transition: all 0.48s ease-in
          }
       </style>
-      
    </head>
-
-
    <body>
       <div class="background"></div>
       <div class="menu isCentered">
@@ -233,42 +250,67 @@
             <span class="helper"></span>
             <img id="aboutMePhoto" class="img-responsive img-circle" src="http://i.imgur.com/4fGpDAK.jpg" alt="about Me Photo"> 
             </a>
+            <a href="https://github.com/elliottchoi">
+            <span class="helper"></span>
+            <img id="github" class="img-responsive" src="http://i.imgur.com/XzmYtQN.png">
+            </a>
             <a href="https://ca.linkedin.com/in/elliottchoi">
             <span class="helper"></span>
-            <img id="linkedin" class="img-responsive" src="http://i.imgur.com/EMRthws.png" alt="linkedIn logo">
-            </a>
-            <a href="https://stackoverflow.com">
-            <span class="helper"></span>
-            <img id="stackOverFlow" class="img-responsive" src="http://i.imgur.com/xbDyyg8.png" alt="stackoverflow logo">
+            <img id="linkedin" class="img-responsive" src="http://i.imgur.com/oE8kmJk.png" alt="linkedIn logo">
             </a>
             <a href="ElliottChoiResume.pdf">
             <span class="helper"></span>
-            <img id="resume" class="img-responsive" src="http://i.imgur.com/PtZdyHK.png" alt="resume png">
-            </a>
-            <a href="#">
-            <span class="https://github.com/elliottchoi"></span>
-            <img id="github" class="img-responsive" src="http://i.imgur.com/hLiZMEs.png">
+            <img id="resume" class="img-responsive" src="http://i.imgur.com/Qp7GXif.png" alt="resume png">
+            </a> 
+            <a href="https://stackoverflow.com">
+            <span class="helper"></span>
+            <img id="stackOverFlow" class="img-responsive" src="http://i.imgur.com/XN2ymjZ.png" alt="stackoverflow logo">
             </a>
          </div>
          <a href="#" class="to-about-me">
-         <span>About me</span>
+         <span>Things I know</span>
          <img src="http://i.imgur.com/Vq308PV.png" />
          </a>
       </div>
       <div class="container">
-         <div class="about-Me">
-            <h3>About <span="color:black"><strong> Me</strong></span></h3>
-            <hr />
-            <div class="row">
-               <div class="col-md-4 bio-container">
-                  <p>what I love</p>
+         <div class="skills">
+            <h3>what<span="color:black"><strong> I </strong>know</span></h3>
+            <hr/>
+            <div class="skillsImages isCentered ">
+                  <div>
+                     <a href=#">
+                     <span class="helper"></span>
+                     <img id="java" class="img-responsive" src="http://i.imgur.com/TSK4rRU.png" alt="java">
+                     </a>
+                      <a href=#">
+                     <span class="helper"></span>
+                     <img id="c++" class="img-responsive" src="http://i.imgur.com/GhjX8UU.png" alt="c++">
+                     </a>
+                      <a href=#">
+                      <span class="helper"></span>
+                     <img id="meteor" class="img-responsive" src="http://i.imgur.com/emrllp5.png" alt="meteor">
+                     </a>
+                      <a href=#">
+                     <span class="helper"></span>
+                     <img id="javascript" class="img-responsive" src="http://i.imgur.com/RfntewH.png" alt="javascript">
+                     </a>
+                      <a href=#">
+                      <span class="helper"></span>
+                     <img id="html5" class="img-responsive" src="http://i.imgur.com/7psitRa.png" alt="html5">
+                     </a>
+                      <a href=#">
+                     <span class="helper"></span>
+                     <img id="css" class="img-responsive" src="http://i.imgur.com/oHRLv8G.png" alt="css">
+                     </a>
+                      <a href=#">
+                     <span class="helper"></span>
+                     <img id="bootstrap" class="img-responsive" src="http://i.imgur.com/SWF0VUa.png" alt="bootstrap">
+                     </a>
                </div>
             </div>
          </div>
       </div>
       </div>
-
-
       <script type="text/javascript">
          $('document').ready(function() {
            $('.to-about-me').click(function() {
@@ -278,5 +320,4 @@
            });
          });
       </script>
-
    </body>
