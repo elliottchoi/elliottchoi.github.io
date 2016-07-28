@@ -9,7 +9,6 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
       <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
       <style>
-
          @font-face {font-family:'GeosansLight'; src:url('GeosansLight.ttf');}
          h3{
          font-family:'GeosansLight';
@@ -20,7 +19,6 @@
          a:hover{
          text-decoration: none;
          }
-
          /* For mobile phones: */
          [class*="col-"] {
          width: 100%;
@@ -164,25 +162,21 @@
          height: 90px;
          box-shadow: 9px 0px 9px -9px #222;
          cursor: default;
-
          }
          .menu div a>img{
          max-height: 90%;
          max-width: 90%;
-  	 filter: grayscale(100%);
-    	 -webkit-filter: grayscale(1); /* Old WebKit */	
-	 transition: all 0.48s ease-in
+         filter: grayscale(100%);
+         -webkit-filter: grayscale(1); /* Old WebKit */	
+         transition: all 0.48s ease-in
          vertical-align: middle;
          display: inline-block;
          }
-
          .menu div a>img:hover{
- 	 filter: grayscale(0%);
-    	 -webkit-filter: grayscale(0); /* Old WebKit */	
-	 transition: all 0.48s ease-in
+         filter: grayscale(0%);
+         -webkit-filter: grayscale(0); /* Old WebKit */	
+         transition: all 0.48s ease-in
          }
-
-
          .helper {
          display: inline-block;
          height: 100%;
@@ -217,25 +211,36 @@
          height: 1px;
          margin-bottom: 36px;
          }
-         .bio-container p{
-         font-size: 14px;
-         padding: 0 54px;
-         line-height: 21px;
-         color: #444;
-         font-family: Candara,Calibri,Segoe,"Segoe UI",Optima,Arial,sans-serif;
-         -webkit-box-sizing: border-box;
-         -moz-box-sizing: border-box;
-         box-sizing: border-box;
+
+         .skillsImages div a{
+         display: block;
+         width: 14%;
+         float: left;
+         height: 100px;
+         text-align: center;
+         white-space: nowrap;
+         -webkit-transition: all .24s;
+         -moz-transition: all .24s;
+         -ms-transition: all .24s;
+         -o-transition: all .24s;
+         transition: all .24s;
          }
-	 .col-sm-1 {
- 	 margin:10px!important;
-	 }
-
-
+         .skillsImages div a>img{
+         max-height: 90%;
+         max-width: 90%;
+         filter: grayscale(100%);
+         -webkit-filter: grayscale(1); /* Old WebKit */	
+         transition: all 0.48s ease-in
+         vertical-align: middle;
+         display: inline-block;
+         }
+         .skillsImages div a>img:hover{
+         filter: grayscale(0%);
+         -webkit-filter: grayscale(0); /* Old WebKit */	
+         transition: all 0.48s ease-in
+         }
       </style>
    </head>
-
-
    <body>
       <div class="background"></div>
       <div class="menu isCentered">
@@ -246,10 +251,10 @@
             <img id="aboutMePhoto" class="img-responsive img-circle" src="http://i.imgur.com/4fGpDAK.jpg" alt="about Me Photo"> 
             </a>
             <a href="https://github.com/elliottchoi">
-	    <span class="helper"></span>
+            <span class="helper"></span>
             <img id="github" class="img-responsive" src="http://i.imgur.com/XzmYtQN.png">
             </a>
-	    <a href="https://ca.linkedin.com/in/elliottchoi">
+            <a href="https://ca.linkedin.com/in/elliottchoi">
             <span class="helper"></span>
             <img id="linkedin" class="img-responsive" src="http://i.imgur.com/oE8kmJk.png" alt="linkedIn logo">
             </a>
@@ -270,47 +275,42 @@
       <div class="container">
          <div class="skills">
             <h3>what<span="color:black"><strong> I </strong>know</span></h3>
-            <hr />
-            <div class="row centered">
-               <div class="col-md-4 bio-container">
-		<div>
-           	<a href="#" class="skill-image">
-		<div class="col-sm-1">
-		<span class="helper"></span>
-		<img id="java" class="img-responsive" src="http://i.imgur.com/TSK4rRU.png" alt="java">
-		</div>
-		<div class="col-sm-1">
-	        <span class="helper"></span>
-		<img id="c++" class="img-responsive" src="http://i.imgur.com/GhjX8UU.png" alt="c++">
-		</div>
-		<div class="col-sm-1">
-            	<span class="helper"></span>
-		<img id="meteor" class="img-responsive" src="http://i.imgur.com/emrllp5.png" alt="meteor">
-		</div>
-		<div class="col-sm-1">
-            	<span class="helper"></span>
-		<img id="javascript" class="img-responsive" src="http://i.imgur.com/RfntewH.png" alt="javascript">
-		</div>
-		<div class="col-sm-1">
-		<img id="html5" class="img-responsive" src="http://i.imgur.com/7psitRa.png" alt="html5">
-		</div>
-		<div class="col-sm-1">
-            	<span class="helper"></span>
-		<img id="css" class="img-responsive" src="http://i.imgur.com/oHRLv8G.png" alt="css">
-		</div>
-		<div class="col-sm-1">
-            	<span class="helper"></span>
-		<img id="bootstrap" class="img-responsive" src="http://i.imgur.com/SWF0VUa.png" alt="bootstrap">
-		</div>
-		</a>
-		</div>
+            <hr/>
+            <div class="skillsImages isCentered ">
+                  <div>
+                     <a href=#">
+                     <span class="helper"></span>
+                     <img id="java" class="img-responsive" src="http://i.imgur.com/TSK4rRU.png" alt="java">
+                     </a>
+                      <a href=#">
+                     <span class="helper"></span>
+                     <img id="c++" class="img-responsive" src="http://i.imgur.com/GhjX8UU.png" alt="c++">
+                     </a>
+                      <a href=#">
+                      <span class="helper"></span>
+                     <img id="meteor" class="img-responsive" src="http://i.imgur.com/emrllp5.png" alt="meteor">
+                     </a>
+                      <a href=#">
+                     <span class="helper"></span>
+                     <img id="javascript" class="img-responsive" src="http://i.imgur.com/RfntewH.png" alt="javascript">
+                     </a>
+                      <a href=#">
+                      <span class="helper"></span>
+                     <img id="html5" class="img-responsive" src="http://i.imgur.com/7psitRa.png" alt="html5">
+                     </a>
+                      <a href=#">
+                     <span class="helper"></span>
+                     <img id="css" class="img-responsive" src="http://i.imgur.com/oHRLv8G.png" alt="css">
+                     </a>
+                      <a href=#">
+                     <span class="helper"></span>
+                     <img id="bootstrap" class="img-responsive" src="http://i.imgur.com/SWF0VUa.png" alt="bootstrap">
+                     </a>
                </div>
             </div>
          </div>
       </div>
       </div>
-
-
       <script type="text/javascript">
          $('document').ready(function() {
            $('.to-about-me').click(function() {
@@ -320,5 +320,4 @@
            });
          });
       </script>
-
    </body>
